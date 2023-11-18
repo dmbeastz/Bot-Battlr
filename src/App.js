@@ -42,7 +42,7 @@ function App() {
   };
 
   const handleViewDetails = (bot) => {
-    selectedBot(bot);
+    setSelectedBot(bot);
   };
 
   const handleEnlist = (bot) => {

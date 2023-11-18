@@ -1,8 +1,13 @@
-export default function YourArmy({ Army, onRelease, onDischarge }) {
-    return (
-      <div>
-        <h2>Your Army</h2>
-        {Army && Array.isArray(Army) && Army.map((bot) => (
+
+import React from "react";
+
+export default function YourArmy({ army, onRelease, onDischarge }) {
+  return (
+    <div>
+      <h2>Your Army</h2>
+      {army &&
+        Array.isArray(army) &&
+        army.map((bot) => (
           <div key={bot.id}>
             <img src={bot.avatar_url} alt={bot.name} />
             <p>{bot.name}</p>
@@ -10,7 +15,6 @@ export default function YourArmy({ Army, onRelease, onDischarge }) {
             <button onClick={() => onDischarge(bot.id)}>Discharge</button>
           </div>
         ))}
-      </div>
-    );
-  }
-  
+    </div>
+  );
+}
