@@ -6,6 +6,7 @@ import SortBar from "./components/sortbar";
 import './style/botcollection.css';
 import './style/yourarmy.css';
 import './style/botspecs.css';
+import './style/sortbar.css';
 
 function App() {
   const API_URL = 'http://localhost:3000/bots';
@@ -13,7 +14,8 @@ function App() {
   const [bots, setBots] = useState([]);
   const [army, setArmy] = useState ([]);
   const [selectedBot, setSelectedBot] = useState(null);
-  const [sortKey, setSortKey] =useState(null);
+  const [sortKey, setSortKey] = useState(null);
+
 
   useEffect(() => {
     fetchData();
@@ -34,13 +36,14 @@ function App() {
   };
 
   const handleRelease = (bot) => {
-    setArmy (army.filter((bot) => bot.id !== bot.id));
+    setArmy(army.filter((armyBot) => armyBot.id !== bot.id));
+
   };
 
   const handleDischarge = (botId) => {
   fetch(`http://localhost:3000/bots/${botId}`,
   {method: 'DELETE'})
-  .then (() =>setArmy (army.filter((bot) => bot.id !== bot.id)));
+  .then(() => setArmy(army.filter((armyBot) => armyBot.id !== botId)));
   };
 
   const handleViewDetails = (bot) => {
