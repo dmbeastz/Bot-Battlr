@@ -1,26 +1,39 @@
-/* .App {
-    text-align: center;
-    background-color: black;
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
-    color: white;
-    margin-top: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-}
-  
-  
+/* BotCollection.css */
 
 .bot-collection-container {
-    background-color: black;
-    padding: 20px;
-  }
-  
-  .bot-item {
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
-    color: white;
-  }
-   */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.bot-collection-container h2 {
+  margin-bottom: 16px;
+}
+
+.bot-collection-container div {
+  border: 1px solid white;
+  padding: 16px;
+  text-align: center;
+}
+
+.bot-collection-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.bot-collection-container button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.bot-collection-container button:hover {
+  background-color: #ddd;
+}

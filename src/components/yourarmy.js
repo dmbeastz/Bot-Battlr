@@ -1,9 +1,9 @@
+import React from 'react';
 
-import React from "react";
 
 export default function YourArmy({ army, onRelease, onDischarge }) {
   return (
-    <div>
+    <div className="your-army-container">
       <h2>Your Army</h2>
       {army &&
         Array.isArray(army) &&

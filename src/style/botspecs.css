@@ -1,0 +1,36 @@
+/* BotSpecs.css */
+
+.bot-specs-container {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
+  
+  .bot-specs-container h2 {
+    margin-bottom: 16px;
+  }
+  
+  .bot-specs-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  
+  .bot-specs-container p {
+    margin-bottom: 8px;
+  }
+  
+  .bot-specs-container button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .bot-specs-container button:hover {
+    background-color: #ddd;
+  }
+  

@@ -1,9 +1,11 @@
-import "./style/botcollection.css"
 import { useState, useEffect } from 'react';
 import BotCollection from './components/botcollection';
 import YourArmy from "./components/yourarmy";
 import BotSpecs from "./components/botspecs";
 import SortBar from "./components/sortbar";
+import './style/botcollection.css';
+import './style/yourarmy.css';
+import './style/botspecs.css';
 
 function App() {
   const API_URL = 'http://localhost:3000/bots';
@@ -47,8 +49,9 @@ function App() {
 
   const handleEnlist = (bot) => {
     handleAddToArmy(bot);
-    selectedBot(null);
+    setSelectedBot(null); 
   };
+  
   const handleGoBack = () => {
     setSelectedBot(null);
   };

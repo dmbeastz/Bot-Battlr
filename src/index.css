@@ -11,4 +11,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+  font: 1em sans-serif;
+}
 
+
+.box-container{
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  background-repeat: no-repeat;
+  gap: 5rem;
+}
+.box-container .box{
+  padding: 3rem 2rem;
+ 
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.284);
+  text-align: center;
+}
+.box-container .box img{
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+}
+.box-container .box .details{
+  margin-top: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+.box-container .box .details p{
+  margin-left: .5rem;
+  color: wheat;
+}
+
+.box-container .box h3{
+  color: wheat;
+}
+p{
+  color: wheat;
+  
+}
+h4{
+  color: wheat;
+}
+a {
+  text-decoration: none;
+}
+
+.container{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: fit-content;
+}
+.container .box{
+  margin: .5rem;
+  padding: 3rem 2rem;
+  background: #fff;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.284);
+  text-align: center;
+}
+
+.container .box img{
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+}
+button{
+  height: 2rem;
+  width: 10rem;
+  border: 1px solid red;
+  margin-top: .8rem;
+  background: #fff;
+}

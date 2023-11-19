@@ -1,0 +1,40 @@
+/* YourArmy.css */
+
+.your-army-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
+  
+  .your-army-container h2 {
+    margin-bottom: 16px;
+  }
+  
+  .your-army-container > div {
+    border: 1px solid white;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .your-army-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+  }
+  
+  .your-army-container button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .your-army-container button:hover {
+    background-color: #ddd;
+  }
+  
