@@ -59,9 +59,9 @@ function App() {
     setSelectedBot(null);
   };
 
-  const handleSort =(key) => {
+  const handleSort = (key) => {
     setSortKey(key);
-    const sortedBots = [...bots].sort ((a,b) => a [key] - b[key]);
+    const sortedBots = [...bots].sort((a, b) => b[key] - a[key]); 
     setBots(sortedBots);
   };
 
