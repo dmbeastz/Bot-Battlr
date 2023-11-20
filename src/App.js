@@ -9,7 +9,7 @@ import './style/botspecs.css';
 import './style/sortbar.css';
 
 function App() {
-  const API_URL = 'http://localhost:3000/bots';
+  const API_URL = 'https://json-bot-api.onrender.com/bots';
 
   const [bots, setBots] = useState([]);
   const [army, setArmy] = useState ([]);
@@ -41,7 +41,7 @@ function App() {
   };
 
   const handleDischarge = (botId) => {
-  fetch(`http://localhost:3000/bots/${botId}`,
+  fetch(`https://json-bot-api.onrender.com/bots/${botId}`,
   {method: 'DELETE'})
   .then(() => setArmy(army.filter((armyBot) => armyBot.id !== botId)));
   };
@@ -63,13 +63,13 @@ function App() {
     setSortKey(key);
     const sortedBots = [...bots].sort((a, b) => b[key] - a[key]); 
     setBots(sortedBots);
+    
   };
 
-
-  return (
+ return (
     <div className="App">
       
-      <SortBar onSort={handleSort} />
+      <SortBar onSort={handleSort}/>
       {selectedBot ? (
         <BotSpecs bot={selectedBot} onEnlist={handleEnlist} onGoBack={handleGoBack} />
       ) : (
